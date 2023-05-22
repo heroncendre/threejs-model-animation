@@ -3,9 +3,9 @@ import * as dat from 'lil-gui'
 import { App } from '../App'
 
 export class Debug {
-    constructor() {
+    constructor(forced) {
 
-        this.active = window.location.hash === '#debug'
+        this.active = typeof forced === "boolean" ? forced : window.location.hash === '#debug'
 
         this.app = null
 
