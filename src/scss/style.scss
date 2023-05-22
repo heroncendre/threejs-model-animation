@@ -1,0 +1,38 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    overflow: hidden;
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+button {
+    width: 100px;
+    height:60px;
+    padding: 10px;
+    margin: 8px;
+    vertical-align: middle;
+    color:bisque;
+    background-color: darkslategray;
+    z-index: 10;
+    position: relative;
+    font-weight: bold;
+
+    &:hover{
+        background-color: slategray;
+        color: black;
+        font-weight: bolder;
+    }
+}
